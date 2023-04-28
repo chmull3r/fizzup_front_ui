@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  # Symfony apache project container
+  ui:
+    build:
+      context: .
+      dockerfile: docker/nuxt/Dockerfile
+    container_name: ui_symfony
+    hostname: ui_symfony
+    ports:
+      - 3001:3000
+    volumes:
+      - ./nuxt:/app
+    restart: always
+    networks:
+      - tutorial
+
+networks:
+  tutorial:
