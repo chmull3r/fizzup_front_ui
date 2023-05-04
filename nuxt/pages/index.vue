@@ -1,9 +1,14 @@
 <template>
-  <Tutorial/>
+  <Header/>
+<!--  <Home/>-->
 </template>
 
 <script>
+import Header from "../components/Header.vue";
+import Home from "../components/Home.vue";
+
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  components: {Header, Home}
 }
 </script>
