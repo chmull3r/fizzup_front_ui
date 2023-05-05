@@ -13,6 +13,15 @@ body {
   font-size: 2.3rem;
 }
 
+.header-title {
+  color: #FFFFFF;
+  font-size: 1.3rem;
+}
+.header-title:hover {
+  text-decoration: none;
+  color: unset;
+}
+
 .jumbotron-img {
   background: rgb(237,116,88);
   background: linear-gradient(302deg, rgba(237,116,88,1) 16%, rgba(51,61,81,1) 97%);

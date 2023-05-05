@@ -1,22 +1,30 @@
 <template>
-<!--  <Header/>-->
-  <div>
-    <NuxtLink to="/">Home</NuxtLink>
-    <div>{{ comments }}</div>
+  <div class="container">
+<!--  <<Article :article="$article"></Article>-->
+<!--  <CommentForm></CommentForm>div>-->
+
+    <div class="milkyway"></div>
+    <CommentsList></CommentsList>
+    <!--  <div>{{ comments }}</div>-->
   </div>
 </template>
 
 <script>
-import Header from "../components/Header.vue";
 // export const getComments = async () => {
 //   const comments = await $axios.$get('http://localhost:8740/comments')
 //   return { comments}
 // }
 
+import Article from "../components/Article.vue";
+import CommentForm from "../components/CommentForm.vue";
+import CommentsList from "../components/CommentsList.vue";
+
 export default {
-  async asyncData() {
-    const comments = await fetch('http://localhost:8740/comments')
-    return {comments}
-  }
+  components: {CommentForm, Article},
+  // async asyncData() {
+  //  const comments = await fetch('http://localhost:8740/comments')
+  //  return {comments}
+  // },
+  layout: 'Header',
 }
 </script>
