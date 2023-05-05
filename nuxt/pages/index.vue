@@ -1,14 +1,12 @@
 <template>
-  <Header/>
-<!--  <Home/>-->
+    <Home/>
 </template>
 
 <script>
-import Header from "../components/Header.vue";
 import Home from "../components/Home.vue";
 
 export default {
-  name: 'IndexPage',
-  components: {Header, Home}
+  name: 'HomePage',
+  components: {Home}
 }
 </script>
