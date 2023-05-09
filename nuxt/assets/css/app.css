@@ -19,7 +19,7 @@ body {
 }
 .header-title:hover {
   text-decoration: none;
-  color: unset;
+  color: #FFFFFF;
 }
 
 .jumbotron-img {
@@ -140,6 +140,10 @@ fieldset[disabled] .btn-question.active {
 .btn-question .badge {
   color: #ED7458;
   background-color: #FFFFFF;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 footer {

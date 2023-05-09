@@ -5,15 +5,17 @@ services:
     build:
       context: .
       dockerfile: docker/nuxt/Dockerfile
-    container_name: ui_symfony
-    hostname: ui_symfony
+    container_name: ui_cosmic
+    hostname: ui_cosmic
     ports:
       - 3001:3000
     volumes:
       - ./nuxt:/app
     restart: always
     networks:
-      - tutorial
+      - cosmic
 
 networks:
-  tutorial:
+  cosmic:
+    external:
+      name: cosmic
