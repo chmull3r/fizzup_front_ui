@@ -1,11 +1,9 @@
 <template>
   <div class="container">
-  <<Article :article="article"></Article>
-<!--  <CommentForm></CommentForm>div>-->
-
+    <Article :article="article"></Article>
+    <CommentForm></CommentForm>
     <div class="milkyway"></div>
     <CommentsList></CommentsList>
-    <!--  <div>{{ comments }}</div>-->
   </div>
 </template>
 
@@ -15,7 +13,7 @@ import CommentForm from "../components/CommentForm.vue";
 import CommentsList from "../components/CommentsList.vue";
 
 export default {
-  components: {CommentForm, Article},
+  components: {Article, CommentForm, CommentsList},
   layout: 'Header',
   data() {
     return {

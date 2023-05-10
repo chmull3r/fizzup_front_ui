@@ -146,10 +146,31 @@ fieldset[disabled] .btn-question.active {
   cursor: pointer;
 }
 
-.article-image {
+.cover-fit {
   object-fit: cover;
 }
 
+.img-thumbnail {
+  max-height: 100px;
+  max-width: 100px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.img-thumbnail:hover {
+  filter: opacity(0.5);
+}
+
+#userProfileFile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
 footer {
+  position: relative !important;
   background-color: #efefee;
 }

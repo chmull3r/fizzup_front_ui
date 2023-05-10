@@ -7,7 +7,7 @@
           <div class="q-container-show p-4">
             <div class="row">
               <div class="col-2 text-center">
-                <img class="article-image" :src="article.image" width="100" height="100">
+                <img class="cover-fit" :src="article.image" width="100" height="100">
               </div>
               <div class="col">
                 <h1 class="q-title-show">{{ article.question }}</h1>
