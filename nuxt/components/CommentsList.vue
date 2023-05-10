@@ -106,7 +106,6 @@ export default {
     },
     sortByDate(sortFilter) {
       this.comments.sort(function(a, b) {
-        console.log(a.date, b.date);
         return sortFilter == "DESC" ? new Date(b.date) - new Date(a.date) : new Date(a.date) - new Date(b.date) ;
       })
       return this.comments;

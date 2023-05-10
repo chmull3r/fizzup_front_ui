@@ -146,6 +146,10 @@ fieldset[disabled] .btn-question.active {
   cursor: pointer;
 }
 
+.article-image {
+  object-fit: cover;
+}
+
 footer {
   background-color: #efefee;
 }
