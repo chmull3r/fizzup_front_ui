@@ -58,7 +58,6 @@ export default {
     },
   },
   mounted() {
-    this.getCommentsFromLocalStorage();
     this.sortByDate('DESC');
   },
   methods: {
@@ -80,15 +79,6 @@ export default {
     toggleNoteBtn() {
       this.noteArrowFilterUp = !this.noteArrowFilterUp;
     },
-    getCommentsFromLocalStorage() {
-      const commentsFromLocalStorage = JSON.parse(localStorage.getItem('localComments'));
-      if (commentsFromLocalStorage) {
-        commentsFromLocalStorage.forEach(value => {
-          value['note'] = parseInt(value['note']);
-          this.comments.unshift(value);
-        });
-      }
-    }
   },
 
 }

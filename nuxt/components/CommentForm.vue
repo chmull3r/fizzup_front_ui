@@ -37,8 +37,7 @@
           </p>
         </div>
         <div v-if="success" class="mt-4 alert alert-success d-flex align-items-center" role="alert">
-          <p>{{ success }}
-          </p>
+          <p>{{ success }}</p>
         </div>
       </form>
     </div>
@@ -122,8 +121,9 @@ export default {
         localStorage.setItem(key, JSON.stringify(datas));
         this.success = "Youhou ! Votre commentaire a été ajouté."
         this.resetForm();
+        this.$emit('newCommentInLocalStorage');
       } catch(localError) {
-        this.errors.push(localError.error);
+        this.errors.push(localError);
       }
     },
     resetForm() {
@@ -132,7 +132,10 @@ export default {
       this.fields.opinion = null;
       this.fields.image = null;
       this.fields.note = 0;
-    }
+      setTimeout(() => {
+        this.success = null;
+      }, 8000)
+    },
   }
 }
 </script>
