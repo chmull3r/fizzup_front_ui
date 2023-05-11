@@ -24,7 +24,7 @@
           </div>
         </div>
         <div class="mb-3">
-          <textarea v-model.trim="fields.opinion" placeholder="..." class="form-control" id="opinion" name="opinion" rows="3"></textarea>
+          <textarea v-model.trim="fields.opinion" placeholder="Alors... c'était comment ?" class="form-control" id="opinion" name="opinion" rows="3"></textarea>
         </div>
         <label for="note" class="form-label">{{ noteLabelMessage }}<i class="fa fa-star" style="color: #ffdd00;"></i></label>
         <input v-model="fields.note" type="range" class="form-range" name="vote" value="1" min="0" max="5" id="note">

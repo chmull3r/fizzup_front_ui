@@ -2,7 +2,7 @@
   <div>
     <div class="row">
       <div class="col-12">
-        <h2 class="my-4">Question</h2>
+        <h2 class="my-4">Rando Cosmic #{{ article.id }}</h2>
         <div style="box-shadow: 2px 3px 9px 4px rgba(0,0,0,0.04);">
           <div class="q-container-show p-4">
             <div class="row">
@@ -10,7 +10,7 @@
                 <img class="cover-fit" :src="article.image" width="100" height="100">
               </div>
               <div class="col">
-                <h1 class="q-title-show">{{ article.question }}</h1>
+                <h1 class="q-title-show">{{ article.titre }}</h1>
                 <div class="q-display p-3">
                   <i class="fa fa-quote-left mr-3"></i>
                   <p class="d-inline">{{ article.content }}</p>

@@ -31,8 +31,9 @@ export default {
   data() {
     return {
       article: {
+        'id': '68',
         'image': 'images/corgi_in_mountains.jpg',
-        'question': 'un corgi peut-il marcher 30km dans les Vosges en une seule et même journée ?',
+        'titre': 'Randonnée de 30km dans les Vosges avec un Corgi en une seule et même journée',
         'author': 'HappyRando',
         'content': "Ut et accumsan turpis. Aenean fermentum urna in neque convallis mollis. Sed a dictum eros. Sed ex leo, pellentesque at dictum id, gravida ac mauris. Praesent nec pellentesque odio. Duis pharetra, justo ac mattis dignissim, lorem ipsum iaculis odio, quis commodo tellus felis eget eros. Sed iaculis mi ut felis bibendum molestie. In id hendrerit ex. Phasellus gravida porta tortor tempor accumsan. Maecenas tempus enim a congue aliquam."
       },
