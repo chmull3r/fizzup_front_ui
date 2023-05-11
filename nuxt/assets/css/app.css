@@ -59,6 +59,14 @@ body {
   margin: 3rem 0;
 }
 
+.yellow-star {
+  color: #ffdd00;
+}
+
+.grey-star {
+  color: #efefee;
+}
+
 .q-display {
   background: #fff;
   border-radius: .25rem;

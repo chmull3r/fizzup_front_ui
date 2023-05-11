@@ -66,7 +66,7 @@ export default {
     noteLabelMessage() {
       let message = "Note l'expérience:";
       return message.concat(' ', this.fields.note);
-    }
+    },
   },
   methods: {
     sendNewComment(e) {
@@ -92,7 +92,6 @@ export default {
       }
     },
     checkFormErrors(field, value) {
-      console.log(field);
       if (value === null) {
         this.errors.push(field)
       } else if (field == "email" && !this.validEmail(value)) {
@@ -106,7 +105,6 @@ export default {
     },
     uploadImage(e) {
       const image = e.target.files[0];
-      // this.fields.image = image.name;
       const reader = new FileReader();
       reader.readAsDataURL(image);
       reader.onload = e =>{
