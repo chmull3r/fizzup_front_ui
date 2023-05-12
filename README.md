@@ -1,6 +1,6 @@
 # fizzup_ui
 
-Fizzup_ui est une interface web en VueJS / NuxtJs. Elle est contenisée avec Docker sur une image NodeJs. Cette interface permet de donner son avis sur une expérience passée en postant un commentaire. Ce dernier est stocké dans le localStorage de votre navigateur à l'adresse localhost:3001. 
+Fizzup_ui est une interface web en VueJS / NuxtJs. Elle est contenue dans un container Docker d'une image NodeJs. Cette interface permet de donner son avis sur une expérience passée en postant un commentaire. Ce dernier est stocké dans le localStorage de votre navigateur à l'adresse localhost:3001. 
 
 ## Build Setup
 
@@ -9,7 +9,10 @@ Fizzup_ui est une interface web en VueJS / NuxtJs. Elle est contenisée avec Doc
 ```bash
 # clone le projet via SSH
 $ git@github.com:chmull3r/fizzup_front_ui.git
+```
 
+~ Docker
+```bash
 # build l'environnement Docker
 $ docker-compose build
 

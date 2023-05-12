@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
-    <div v-if="showErrorsModal || errors.length > 0" class="card text-center">
-      <div class="card-header">
+  <div>
+    <dialog v-if="showErrorsModal" id="dialog" class="card text-center error-modal">
+      <div class="card-header error-modal-header">
         Oops !
       </div>
       <div class="card-body">
@@ -12,11 +12,15 @@
       <div class="card-footer text-muted">
         <button @click="showErrorsModal = !showErrorsModal" type="button" class="btn btn-outline-danger">X</button>
       </div>
+    </dialog>
+    <div :class="{'error-blur-content': showErrorsModal}">
+      <div class="container">
+        <Article :article="article"></Article>
+        <CommentForm @newCommentInLocalStorage="getCommentsFromLocalStorage"></CommentForm>
+        <div class="milkyway"></div>
+        <CommentsList :comments="comments"></CommentsList>
+      </div>
     </div>
-    <Article :article="article"></Article>
-    <CommentForm @newCommentInLocalStorage="getCommentsFromLocalStorage"></CommentForm>
-    <div class="milkyway"></div>
-    <CommentsList :comments="comments"></CommentsList>
   </div>
 </template>
 
